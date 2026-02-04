@@ -1,0 +1,162 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: roboto, Arial, Helvetica, sans-serif;
+}
+
+.nav-logo {
+  width: 200px;
+}
+nav {
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 10px 20px 10px;
+  align-items: center;
+  border-bottom: gainsboro solid 1px;
+  margin-bottom: 10px;
+}
+.profile-picture {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.right-box {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.search {
+  border-radius: 30px;
+  width: 100%;
+  height: 50px;
+  padding-left: 10px;
+  border: gainsboro solid 1px;
+  outline: none;
+}
+.middle-box {
+  width: 40%;
+}
+.create-btn {
+  padding: 10px 15px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+}
+.create-btn:hover {
+  background-color: darkgray;
+}
+.main-section {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px 30px;
+}
+.tags button {
+  padding: 5px 15px;
+  border-radius: 7px;
+  border: none;
+  cursor: pointer;
+  font-family: roboto, Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+.tags {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  gap: 10px;
+}
+.tags button:hover {
+  background-color: black;
+  color: white;
+}
+.video-card {
+  width: 400px;
+  margin: 10px;
+}
+.tbn {
+  border-radius: 12px;
+  width: 100%;
+}
+.video-card img:hover {
+  cursor: pointer;
+}
+.video-details {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+.video-details-pp {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.title {
+  font-size: 16px;
+  font-weight: bold;
+}
+.channel {
+  font-size: 14px;
+  color: darkgray;
+}
+.stats {
+  font-size: 14px;
+  color: darkgray;
+}
+.video-text {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.video-details-p {
+  margin: 0;
+}
+.video-text p {
+  margin: 0;
+}
+.thumbnail-container {
+  position: relative;
+  width: 100%;
+}
+.duration {
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  border-radius: 4px;
+  padding: 3px 6px;
+  font-weight: 500;
+  font-size: 12px;
+}
+.video-card:hover {
+  background-color: rgb(0, 128, 0, 0.1);
+  border-radius: 15px;
+  transition: all 0.5s ease-in-out;
+}
+@media (max-width: 600px) {
+  .create-btn {
+    display: none;
+  }
+  .nav-logo {
+    width: 40%;
+  }
+  .search {
+    height: 30px;
+    padding-left: 10px;
+    border: gainsboro solid 1px;
+    outline: none;
+    margin-right: 20px;
+  }
+  .left-box {
+    flex: 1;
+  }
+  .middle-box {
+    flex: 2;
+  }
+  .right-box {
+    flex: 1;
+  }
+}
